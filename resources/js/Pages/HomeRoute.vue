@@ -23,7 +23,7 @@ const getValue = async () => {
             <router-link to="/test"> Take me to Test page </router-link>
         </p>
         <p>
-            <button type="button" @click.prevent="getValue()">Trigger Endpoint</button>
+            <button class="btn btn-primary" type="button" @click.prevent="getValue()">Trigger Endpoint</button>
             <p v-if="response">{{ response.data }}</p>
         </p>
     </div>
